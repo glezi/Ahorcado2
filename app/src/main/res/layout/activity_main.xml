@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:relleno="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Selecciona Nivel:"
+            android:layout_marginBottom="5dp"/>
+
+        <Spinner
+            android:layout_width ="match_parent"
+            android:layout_height ="wrap_content"
+            android:id="@+id/nivel"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Selecciona Categoría: "
+            android:layout_marginBottom="5dp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/category"
+            android:layout_marginBottom="5dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="fondo"
+            android:scaleType="fitXY"
+            android:src ="@drawable/imagen"/>
+    </ LinearLayout >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Botón
+            android:id ="@+id/start"
+            android:text="Iniciar Juego "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Navegar"
+            android:background="@drawable/boton"
+            android:layout_marginBottom="5dp"
+            android:textColor=" #ffffff"
+            android:textStyle="negrita" />
+        <Botón
+            android:id = " @+id/score"
+            android:texto = "puntaje"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:onClick = "Navegar"
+            android:background = "@drawable/boton"
+            android:layout_marginBottom = "5dp"
+            android:textColor = "#ffffff"
+            android:textStyle = "negrita" />
+
+    </ LinearLayout >
+
+
+
+
+</RelativeLayout>

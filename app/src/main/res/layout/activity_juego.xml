@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JuegoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="Categoría"
+                            android:textColor="#ef4444"
+                            android:textStyle="bold"
+                            android:layout_marginRight="10dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text=""
+                            android:id="@+id/txtCategoria" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="Puntaje"
+                            android:layout_gravity="right"
+                            android:textStyle="bold"
+                            android:textColor="#ef4444"
+                            android:layout_marginRight="10dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="0"
+                            android:id="@+id/txtPuntaje"
+                            android:layout_gravity="right" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="Intentos"
+                            android:layout_gravity="right"
+                            android:textColor="#ef4444"
+                            android:textStyle="bold"
+                            android:layout_marginRight="10dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="4"
+                            android:id="@+id/txtIntentos"
+                            android:layout_gravity="right" />
+                    </LinearLayout>
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ima1"
+                    android:layout_marginBottom="5dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+            <Button
+                android:onClick="Verificar"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Q"
+                android:background="@drawable/boton"
+                android:textColor="#ffffff" />
+            <Button
+                android:onClick="Verificar"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="W"
+                android:background="@drawable/boton"
+                android:textColor="#ffffff" />
+            <Button
+                android:onClick="Verificar"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="E"
+                android:background="@drawable/boton"
+                android:textColor="#ffffff" />
+            <Button
+                android:onClick="Verificar"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="R"
+                android:background="@drawable/boton"
+                android:textColor="#ffffff" />
+            <Button
+                android:onClick="Verificar"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="T"
+                android:background="@drawable/boton"
+                android:textColor="#ffffff" />
+            <Button
+                android:onClick="Verificar"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Y"
+                android:background="@drawable/boton"
+                android:textColor="#ffffff" />
+            <Button
+                android:onClick="Verificar"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="U"
+                android:background="@drawable/boton"
+                android:textColor="#ffffff" />
+            <Button
+                android:onClick="Verificar"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="I"
+                android:background="@drawable/boton"
+                android:textColor="#ffffff" />
+            <Button
+                android:onClick="Verificar"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="O"
+                android:background="@drawable/boton"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+            <Button
+                android:onClick="Verificar"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="A"
+                android:background="@drawable/boton"
+                android:textColor="#ffffff" />
+            <Button
+                android:onClick="Verificar"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="S"
+                android:background="@drawable/boton"
+                android:textColor="#ffffff" />
+            <Button
+                android:onClick="Verificar"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="D"
+                android:background="@drawable/boton"
+                android:textColor="#ffffff" />
+            <Button
+                android:onClick="Verificar"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="F"
+                android:background="@drawable/boton"
+                android:textColor="#ffffff" />
+            <Button
+                android:onClick="Verificar"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="G"
+                android:background="@drawable/boton"
+                android:textColor="#ffffff" />
+            <Button
+                android:onClick="Verificar"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="H"
+                android:background="@drawable/boton"
+                android:textColor="#ffffff" />
+            <Button
+                android:onClick="Verificar"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="J"
+                android:background="@drawable/boton"
+                android:textColor="#ffffff" />
+            <Button
+                android:onClick="Verificar"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="K"
+                android:background="@drawable/boton"
+                android:textColor="#ffffff" />
+            <Button
+                android:onClick="Verificar"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="L"
+                android:background="@drawable/boton"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+            <Button
+                android:onClick="Verificar"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="P"
+                android:background="@drawable/boton"
+                android:textColor="#ffffff" />
+            <Button
+                android:onClick="Verificar"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Ñ"
+                android:background="@drawable/boton"
+                android:textColor="#ffffff" />
+            <Button
+                android:onClick="Verificar"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Z"
+                android:background="@drawable/boton"
+                android:textColor="#ffffff" />
+            <Button
+                android:onClick="Verificar"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="X"
+                android:background="@drawable/boton"
+                android:textColor="#ffffff" />
+            <Button
+                android:onClick="Verificar"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="C"
+                android:background="@drawable/boton"
+                android:textColor="#ffffff" />
+            <Button
+                android:onClick="Verificar"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="V"
+                android:background="@drawable/boton"
+                android:textColor="#ffffff" />
+            <Button
+                android:onClick="Verificar"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="B"
+                android:background="@drawable/boton"
+                android:textColor="#ffffff" />
+            <Button
+                android:onClick="Verificar"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="N"
+                android:background="@drawable/boton"
+                android:textColor="#ffffff" />
+            <Button
+                android:onClick="Verificar"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="M"
+                android:background="@drawable/boton"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
